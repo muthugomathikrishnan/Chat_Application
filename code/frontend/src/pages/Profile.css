@@ -1,0 +1,76 @@
+
+.profile-container {
+    background: white; /* White background for the profile box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px; /* Inner spacing */
+    width: 500px; /* Fixed width */
+    transition: transform 0.3s;
+    margin-left: 40%;
+    margin-top: 7%; /* Smooth scaling */
+}
+
+.profile-container:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+h1 {
+    color: #333; /* Dark text for headings */
+    text-align: center; /* Centered heading */
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.profile-details {
+    margin-top: 20px; /* Space above details */
+}
+
+.profile-item {
+    margin-bottom: 15px; /* Space between items */
+    display: flex; /* Flex for alignment */
+    justify-content: space-between; /* Space between label and value */
+}
+
+.profile-item label {
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Darker gray for labels */
+}
+
+.profile-item span,
+.profile-item input {
+    font-size: 16px; /* Font size for text */
+    color: #666; /* Lighter gray for values */
+}
+
+.profile-item input {
+    width: 60%; /* Input width */
+    padding: 5px; /* Inner spacing for inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.profile-actions {
+    display: flex; /* Flex for buttons */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px; /* Space above actions */
+}
+
+button {
+    padding: 10px 15px; /* Inner spacing for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #007bff; /* Primary button color */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+h2{
+    color: red;
+    font-size: 1.5em;
+}

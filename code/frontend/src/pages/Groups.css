@@ -1,0 +1,164 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+
+h1 {
+  text-align: center;
+  color: #4a90e2;
+}
+
+.groups-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 items per row */
+  gap: 20px; /* Space between grid items */
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.group-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px; /* Adjust width of the box */
+  height: 250px; /* Adjust height of the box */
+  padding: 10px;
+  border: none;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.group-box:hover {
+  box-shadow: 0px 8px 16px rgba(210, 120, 238, 0.15);
+  background-color: rgb(238, 162, 221);
+  transform: scale(1.2);
+} 
+
+.group-profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Space between profile image and group name */
+}
+
+.profile-image {
+  width: 80px; /* Profile image size */
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%; /* Make the image circular */
+  border: 2px solid #ddd; /* Add a border to the profile image */
+}
+
+.group-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  margin-top: 10px;
+}
+
+.group-box:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.group-box:active {
+  transform: scale(0.98); /* Slightly shrink on button press */
+}
+
+.floating-button {
+  position: fixed; /* Fixed positioning */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it circular */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  font-size: 24px; /* Font size */
+  display: flex; /* Center the text */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s; /* Smooth color change */
+}
+
+.floating-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+.temp-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 300px; /* Adjust width as necessary */
+}
+
+.temp-box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  color: blue;
+  margin-left: 40px;
+}
+
+.close-button {
+  background: black;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.temp-box-body {
+  margin-top: 10px;
+}
+
+.temp-box-body label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.temp-box-body input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.temp-box-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.temp-box-footer button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.temp-box-footer button:hover {
+  background-color: #0056b3;
+}

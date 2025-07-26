@@ -1,0 +1,110 @@
+/* General styling for body */
+body {
+  font-family: 'Poppins', sans-serif; /* Change font to Poppins */
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  height: 60px;
+  top:0;
+  position: sticky;
+}
+
+/* Left side links */
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-left li {
+  margin-right: 30px;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px; /* Set equal font size */
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #04AA6D; /* Change color on hover */
+}
+
+/* Right side buttons */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-right li {
+  margin-left: 20px;
+}
+
+/* Profile button */
+.profile-button,
+.settings-button,
+.logout-button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 16px; /* Equal font size */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* General button styling */
+.profile-button,
+.settings-button,
+.logout-button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 16px; /* Equal font size for all buttons */
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+
+/* Hover effects */
+.profile-button:hover {
+  background-color: #04AA6D; /* Green background on hover */
+  color: white; /* White text */
+}
+
+.settings-button:hover {
+  background-color: #f4c542; /* Yellow background on hover */
+  color: black; /* Black text */
+}
+
+.logout-button:hover {
+  background-color: #dd4b39; /* Red background on hover */
+  color: white; /* White text */
+}
+
+/* Focus states for accessibility */
+.profile-button:focus,
+.settings-button:focus,
+.logout-button:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+/* You can also add any additional styling for buttons if needed */

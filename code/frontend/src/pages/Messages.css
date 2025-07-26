@@ -1,0 +1,60 @@
+.chat-users-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Adjust for 3 items per row, change to 6 or 4 as needed */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .user-box {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 90%; /* Set max-width for each box */
+    width: 100%;
+  }
+  
+  .user-box:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .user-box:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-profile {
+    margin-bottom: 10px;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #4a90e2;
+  }
+  
+  .user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .user-email {
+    font-size: 14px;
+    color: #666;
+  }
+  
